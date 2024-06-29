@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CreateJsonObject {
-    public JSONObject getJSONObject () {
+    public String createJSONObject () {
         JSONObject jo = new JSONObject();
 
         jo.put("firstName", "John");
@@ -37,6 +37,6 @@ public class CreateJsonObject {
 
         jo.put("phoneNumbers", ja);
 
-        return jo;
+        return jo.toString();
     }
 }
